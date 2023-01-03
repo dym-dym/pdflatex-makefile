@@ -1,9 +1,10 @@
 FILENAME		= main
 LATEX 			= pdflatex 
-FIGS 				= images
+FIGS				= images
 AUXDIR 			= target/intermediary
 OUTPUTDIR		= target/pdf
 OUTPUTFILE 	= ${AUXDIR}/${FILENAME}.pdf
+READER 			= zathura			
 
 pdf:
 	${LATEX} --output-directory=${AUXDIR} ${FILENAME} 
@@ -19,7 +20,7 @@ init:
 	echo "target/" | cat > .gitignore 
 
 read:
-	zathura ${OUTPUTDIR}/${FILENAME}.pdf &
+	${READER} ${OUTPUTDIR}/${FILENAME}.pdf &
 
 clean:
 	rm ${OUTPUTDIR}/* ${AUXDIR}/*
