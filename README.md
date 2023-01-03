@@ -6,7 +6,7 @@ A general pupose pdflatex makefile to aid manipulations and compilation
 
 ## Dependencies
 
-git must be installed to use the `init` part or the makefile. pdflatex and bibtex are also required for document compilatation.
+git must be installed to use the `init` part or the makefile. pdflatex and bibtex are also required for document compilation.
 
 ## Usage
 
